@@ -19,8 +19,9 @@ import {
   PermIdentity,
   Delete,
 } from '@mui/icons-material';
+import { Icons } from 'material-table';
 
-export const tableIcons = {
+export const tableIcons: Icons = {
   Add: forwardRef((props: any, ref: any) => <AddBox { ...props } ref = { ref } />),
   Check: forwardRef((props: any, ref: any) => <Check { ...props } ref = { ref } />),
   Clear: forwardRef((props: any, ref: any) => <Clear { ...props } ref = { ref } />),
