@@ -15,4 +15,8 @@ export const createContactsAPI = (contact: Contact) => {
 
 export const editContactAPI = (contact: Contact, id: string | any) => {
   return instanceAPI.put(`/contacts/${id}`, contact)
-} 
+}
+
+export const deleteOneContactAPI = (id: string | any) => {
+  return instanceAPI.delete(`/contacts/${id}`)
+}
