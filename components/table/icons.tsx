@@ -16,8 +16,6 @@ import {
   SaveAlt,
   Search,
   ViewColumn,
-  PermIdentity,
-  Delete,
 } from '@mui/icons-material';
 import { Icons } from 'material-table';
 
