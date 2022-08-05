@@ -1,4 +1,3 @@
-
 // declaring the types for our state
 export interface ContactState  {
   contact?: ContactInt;

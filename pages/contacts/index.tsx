@@ -8,6 +8,7 @@ import { getContacts } from '../../store/slices/contacts/thunks';
 import { buildData } from '../../utility/functions';
 import { columns } from '../../components/table/constants';
 import { GroupAddOutlined, Delete, Edit } from '@mui/icons-material';
+
 const Contacts: NextPage = () => {
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -22,7 +23,7 @@ const Contacts: NextPage = () => {
     {
       icon: Delete,
       tooltip: 'Delete contact',
-      onClick: (e: any, row: any) => confirm("You want to delete " + row.name)
+      onClick: (e: any, row: any) => router.push(`/deleteContact/${row?.id}`),
     }
   ]
   useEffect(() => {
